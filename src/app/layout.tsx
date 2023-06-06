@@ -15,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main>Main Layout</main>
+        {children}</body>
     </html>
   )
 }
