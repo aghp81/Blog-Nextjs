@@ -1,5 +1,37 @@
 import Link from 'next/link';
 
+const link = [
+    {
+        id:1,
+        title:"Home",
+        url:"/",
+    },
+    {
+        id:2,
+        title:"Portfolio",
+        url:"/portfolio",
+    },
+    {
+        id:3,
+        title:"Blog",
+        url:"/blog",
+    },
+    {
+        id:4,
+        title:"About",
+        url:"/about",
+    },
+    {
+        id:5,
+        title:"Contact",
+        url:"/contact",
+    },
+    {
+        id:6,
+        title:"Dashboard",
+        url:"/dashboard",
+    },
+];
 
 export default function Navbar() {
   return (
@@ -8,15 +40,11 @@ export default function Navbar() {
         <li>
             <Link href="/">لوگو</Link>
         </li>
-        <li>
-            <Link href="/">Home</Link>
-        </li>
-        <li>
-            <Link href="/about">About Us</Link>
-        </li>
-        <li>
-            <Link href="/blog/hello-world">Blog Post</Link>
-        </li>
+        <div>
+            {link.map(link=>(
+                <Link key={link.id} href={link.url}>{link.title}</Link>
+                ))}
+        </div>
   </ul>
     
   )
