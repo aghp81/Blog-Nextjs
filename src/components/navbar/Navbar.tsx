@@ -1,13 +1,23 @@
-import Image from 'next/image'
+import Link from 'next/link';
 
-import styles from '../../app/page.module.css'
 
 export default function Navbar() {
   return (
     
-    <main className={styles.main}>
-        <div>Navbar  </div>
-    </main>
+    <ul>
+        <li>
+            <Link href="/">لوگو</Link>
+        </li>
+        <li>
+            <Link href="/">Home</Link>
+        </li>
+        <li>
+            <Link href="/about">About Us</Link>
+        </li>
+        <li>
+            <Link href="/blog/hello-world">Blog Post</Link>
+        </li>
+  </ul>
     
   )
 }
