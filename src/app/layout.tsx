@@ -20,12 +20,17 @@ export default function RootLayout({
   return (
     <html lang="fa">
       <body className={inter.className}>
+        
+        <div className="container">
+
         <Navbar />
 
         {children}
         
         <Footer />
         
+        </div>
+
       </body>
 
         
