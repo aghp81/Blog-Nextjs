@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link';
 
 const link = [
@@ -43,7 +45,11 @@ export default function Navbar() {
         <div>
             {link.map(link=>(
                 <Link key={link.id} href={link.url}>{link.title}</Link>
-                ))}
+            ))}
+
+            <button onClick={()=>{console.log("loged out")}}>Logout</button>
+
+
         </div>
   </ul>
     
