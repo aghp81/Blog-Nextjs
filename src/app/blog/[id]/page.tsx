@@ -1,11 +1,14 @@
 import Image from 'next/image'
 
-import styles from '../../../app/page.module.css'
+import style from '../../../app/page.module.css'
+
+import styles from './page.module.css'
+
 
 export default function BlogPost() {
   return (
-    <main className={styles.main}>
-      <div>پست وبلاگ </div>
+    <main className={style.main}>
+      <div className={styles.container}>پست وبلاگ </div>
     </main>
   )
 }
