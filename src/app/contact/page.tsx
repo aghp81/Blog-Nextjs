@@ -1,10 +1,12 @@
 import Image from 'next/image'
-import styles from '../page.module.css'
+import style from '../page.module.css'
+
+import styles from './page.module.css'
 
 export default function Contact() {
   return (
-    <main className={styles.main}>
-      <div>تماس ما</div>
+    <main className={style.main}>
+      <div className={styles.container}>تماس ما</div>
     </main>
   )
 }
