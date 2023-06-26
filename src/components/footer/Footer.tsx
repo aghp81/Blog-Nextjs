@@ -1,12 +1,20 @@
 import Image from 'next/image'
 
-import styles from '../../app/page.module.css'
+import style from '../../app/page.module.css'
+
+import styles from './footer.module.css'
 
 export default function Footer() {
   return (
-    <main className={styles.main}>
-      <div> 2023 Abol Ghana. All Right Reserved.  </div>
-      <div></div>
+    <main className={style.main}>
+      <div className={styles.container}>
+        <div > 2023 Abol Ghana. All Right Reserved.  </div>
+        <div>
+          
+        </div>
+      </div>
+      
+      
     </main>
   )
 }
