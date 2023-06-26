@@ -2,6 +2,10 @@
 
 import Link from 'next/link';
 
+import styles from './navbar.module.css'
+
+
+
 const link = [
     {
         id:1,
@@ -38,20 +42,28 @@ const link = [
 export default function Navbar() {
   return (
     
-    <ul>
-        <li>
-            <Link href="/">لوگو</Link>
-        </li>
-        <div>
-            {link.map(link=>(
-                <Link key={link.id} href={link.url}>{link.title}</Link>
-            ))}
+        <div className={styles.container}>
+            <Link href="/" className={styles.logo}>
+                <span className={styles.alogo}>A</span>
+                <span className={styles.ghlogo}>GH</span>
+                <span className={styles.plogo}>P</span>
+            </Link>
+        
+            <div className={styles.links}>
+                {link.map(link=>(
+                    <Link key={link.id} href={link.url} className={styles.link}>
+                        {link.title}
+                    </Link>
+                ))}
 
-            <button onClick={()=>{console.log("loged out")}}>Logout</button>
+                <button
+                    className={styles.logout}
+                    onClick={()=>{console.log("loged out")}}>
+                        Logout
+                </button>
 
-
+            </div> 
         </div>
-  </ul>
     
   )
 }
