@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
   background-color: #111;
   color: #bbb;
-  direction: rtl;
+  direction: ltr;
 }
 
 a{
