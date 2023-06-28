@@ -9,11 +9,11 @@ export default function Footer() {
     
       <div className={styles.container}>
         <div > 2023 Abol Ghana. All Right Reserved.  </div>
-        <div>
-            <Image src="/Instagram.png"  width={15} height={15} alt="Aghp"  />
-            <Image src="/Instagram.png"  width={15} height={15} alt="Aghp"  />
-            <Image src="/Instagram.png"  width={15} height={15} alt="Aghp"  />
-            <Image src="/Instagram.png"  width={15} height={15} alt="Aghp"  />
+        <div className={styles.social}>
+            <Image src="/Instagram.png"  width={15} height={15} className={styles.icon} alt="Aghp Instagram"  />
+            <Image src="/telegram.png"  width={15} height={15} className={styles.icon} alt="Aghp telegram"  />
+            <Image src="/linkedin.png"  width={15} height={15} className={styles.icon} alt="Aghp linkedin"  />
+            <Image src="/twitter2.png"  width={15} height={15} className={styles.icon} alt="Aghp twitter"  />
         </div>
           
       </div>
