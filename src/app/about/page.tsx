@@ -1,3 +1,4 @@
+import Button from '@/components/Button/Button'
 import Image from 'next/image'
 
 import style from '../page.module.css'
@@ -30,6 +31,13 @@ export default function About() {
           </div>
           <div className={styles.item}>
             <h1 className={styles.title}>What We Do?</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est animi totam quia eaque similique id quidem, doloribus eius itaque quam debitis
+              <br />
+              <br />
+              voluptatem blanditiis aut labore laboriosam quibusdam ratione exercitationem cumque.
+            </p>
+            <Button url="/contact" text="Contact" />
           </div>
         </div>
         
