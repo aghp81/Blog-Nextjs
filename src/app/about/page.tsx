@@ -31,7 +31,7 @@ export default function About() {
           </div>
           <div className={styles.item}>
             <h1 className={styles.title}>What We Do?</h1>
-            <p>
+            <p className={styles.desc}>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est animi totam quia eaque similique id quidem, doloribus eius itaque quam debitis
               <br />
               <br />
