@@ -20,7 +20,11 @@ export default function Contact() {
           <form className={styles.form}>
             <input type="text" placeholder="name" className={styles.input} />
             <input type="text" placeholder="email" className={styles.input} />
-            <textarea className={styles.textArea} placeholder="message" ></textarea>
+            <textarea 
+            className={styles.textArea} 
+            cols="30"
+            rows="10"
+            placeholder="message" ></textarea>
             <Button url="#" text="send" />
           </form>
         </div>
