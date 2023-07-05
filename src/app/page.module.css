@@ -24,6 +24,16 @@
   object-fit: cover;
 }
 
+@keyframes move{
+  from{
+      transform: translateY(-15px);
+  }
+  to{
+      transform: translateY(0px) scale(1.03);
+  }
+}
+
+
 .desc{
   font-size: 24px;
   font-weight: 300;
