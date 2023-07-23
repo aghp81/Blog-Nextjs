@@ -2,7 +2,7 @@ import styles from './DarkModeToggle.module.css'
 
 export default function DarkModeToggle() {
 
-    const mode : string = "dark";
+    const mode : string = "light";
     return (
         <div className={styles.container}>
             <div className={styles.icon}>🌙</div>
