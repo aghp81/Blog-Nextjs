@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,9 +24,27 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/layout.jsx",
+    "context/ThemeContext.ts",
+    "src/components/DarkModeToggle/DarkModeToggle.jsx",
+    "context/ThemeContext.ts",
+    "src/app/about/page.jsx",
+    "src/app/blog/[id]/page.jsx",
+    "src/app/blog/page.jsx",
+    "src/app/contact/page.jsx",
+    "src/app/csrpage/page.jsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

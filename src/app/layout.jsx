@@ -3,6 +3,9 @@ import Footer from '@/components/footer/Footer'
 
 import './globals.css'
 import { Inter, Roboto, Poppins, } from 'next/font/google'
+import { ThemeProvider } from '../../context/ThemeContext'
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,22 +17,25 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
 }) {
   return (
     <html lang="fa">
       <body className={inter.className}>
-        
-        <div className="container">
+        <ThemeProvider>
 
-        <Navbar />
+          <div className="container">
 
-        {children}
+            <Navbar />
+
+            {children}
+            
+            <Footer />
+          
+          </div>
+          
+        </ThemeProvider>
         
-        <Footer />
         
-        </div>
 
       </body>
 
