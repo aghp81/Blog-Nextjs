@@ -3,8 +3,6 @@ import Link from 'next/link'
 import natureImage from 'public/stock-photo-142984111.jpg'
 import userAvatar from 'public/userAvatar.png'
 
-
-
 import styles from './page.module.css'
 
 
