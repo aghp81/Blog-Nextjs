@@ -5,8 +5,21 @@ import userAvatar from 'public/userAvatar.png'
 
 import styles from './page.module.css'
 
+async function getData(id) {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+     cache: 'no-store'
+    } )
 
-export default function BlogPost() {
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+ 
+  return res.json()
+}
+
+
+const BlogPost = async ({params}) => {
+  const data = await getData(params.id)
   return (
       <div className={styles.container}>
         <div className={styles.top}>
@@ -15,7 +28,7 @@ export default function BlogPost() {
               Lorem ipsum dolor sit amet.
             </h1>
             <p className={styles.desc}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptates necessitatibus dolorem esse culpa minus? Hic enim, harum, animi nesciunt soluta nam suscipit, eveniet recusandae alias architecto deleniti laudantium mollitia.
+              {data.title}
             </p>
             <div className={styles.author}>
               <Image 
@@ -47,3 +60,5 @@ export default function BlogPost() {
       </div>
   )
 }
+
+export default BlogPost
