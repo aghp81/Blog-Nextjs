@@ -6,10 +6,11 @@ import Mojassame from 'public/mojassame.jpg';
 import styles from './page.module.css'
 
 async function getData() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
+     cache: 'no-store'
+    } )
 
   if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
   }
  
