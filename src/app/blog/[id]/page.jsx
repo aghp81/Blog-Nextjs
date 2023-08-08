@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import natureImage from 'public/stock-photo-142984111.jpg'
 import userAvatar from 'public/userAvatar.png'
-
 import styles from './page.module.css'
+import {notFound} from "next/navigation"
 
 async function getData(id) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
@@ -11,7 +11,7 @@ async function getData(id) {
     } )
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    return notFound()
   }
  
   return res.json()
