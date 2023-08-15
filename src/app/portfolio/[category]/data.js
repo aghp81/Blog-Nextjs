@@ -1,4 +1,4 @@
-export const items ={
+export const items = {
     applications: [
         {
             id: 1,
