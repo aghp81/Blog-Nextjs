@@ -19,6 +19,9 @@
     "react-dom": "18.2.0",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.4",
-    "typescript": "^5.2.0-beta"
+    "swr": "^2.2.1"
+  },
+  "devDependencies": {
+    "typescript": ">=3.4.0 and <3.5.0"
   }
 }
