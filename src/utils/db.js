@@ -4,6 +4,8 @@ const connect = async () => {
     try {
         await mongoose.connect(process.env.MONGO);
       } catch (error) {
-        handleError(error);
+        throw new Error("Connaction failed!")
       }
 }
+
+export default connect
