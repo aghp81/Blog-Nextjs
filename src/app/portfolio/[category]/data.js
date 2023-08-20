@@ -1,16 +1,16 @@
 export const items = {
-    applications: [
+    application: [
         {
             id: 1,
-            title: "Creative Portfolio",
+            title: "Creative Portfolio application",
             desc: "lorem ipsum",
-            image: "",
+            image: "https://www.monash.edu/__data/assets/image/0008/539225/default-news-thumbnail.jpg",
         },
         {
             id: 2,
-            title: "Creative Portfolio",
+            title: "Creative Portfolio application2",
             desc: "lorem ipsum",
-            image: "",
+            image: "https://www.monash.edu/__data/assets/image/0003/3383121/RichardParsonsWEB-01232-resized.jpg",
         }
 
     ],
@@ -18,15 +18,15 @@ export const items = {
     illustrations: [
         {
             id: 1,
-            title: "Creative Portfolio",
+            title: "Creative Portfolio illustrations",
             desc: "lorem ipsum",
-            image: "",
+            image: "/public/mojassame.jpg",
         },
         {
             id: 2,
-            title: "Creative Portfolio",
+            title: "Creative Portfolio illustrations 2",
             desc: "lorem ipsum",
-            image: "",
+            image: "/public/mojassame.jpg",
         }
 
     ],
