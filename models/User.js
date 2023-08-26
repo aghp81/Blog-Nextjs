@@ -22,3 +22,5 @@ const userSchema = new Schema({
 }, 
  {timestamp: true } // created_at , updated_at
 )
+
+export default mongoose.model("User", userSchema)
