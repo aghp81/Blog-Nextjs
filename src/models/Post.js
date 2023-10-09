@@ -2,28 +2,26 @@ import mongoose from "mongoose"
 
 const { Schema } = mongoose
 
-import { stringify } from "querystring"
 
-
-const postSchema = new Schema({
+const postSchema = new mongoose.Schema({
     title:{
-        type: string,
+        type: String,
         required: true, 
     },
     desc:{
-        type: string,
+        type: String,
         required: true, 
     },
     img:{
-        type: string,
+        type: String,
         required: true, 
     },
     content:{
-        type: string,
+        type: String,
         required: true, 
     },
     username:{
-        type: string,
+        type: String,
         required: true, 
     },
     
@@ -31,4 +29,7 @@ const postSchema = new Schema({
  {timestamp: true } // created_at , updated_at
 )
 
-export default mongoose.model("Post", userSchema)
+const Post = mongoose.models.Post || mongoose.model('Post', postSchema);
+
+export default Post;
+

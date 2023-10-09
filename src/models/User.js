@@ -3,19 +3,19 @@ import { stringify } from "querystring"
 
 const { Schema } = mongoose
 
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema({
     name:{
-        type: string,
+        type: String,
         unique: true, // for username
         required: true, 
     },
     email:{
-        type: string,
+        type: String,
         unique: true, // for email
         required: true, 
     },
     password:{
-        type: string,
+        type: String,
         required: true, 
     },
     
@@ -23,4 +23,6 @@ const userSchema = new Schema({
  {timestamp: true } // created_at , updated_at
 )
 
-export default mongoose.model("User", userSchema)
+const User = mongoose.models.User || mongoose.model('User', userSchema);
+
+export default User;

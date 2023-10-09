@@ -3,7 +3,7 @@ import Footer from '@/components/footer/Footer'
 
 import './globals.css'
 import { Inter, Roboto, Poppins, } from 'next/font/google'
-import { ThemeProvider } from '../../context/ThemeContext'
+import { ThemeProvider } from '@/context/ThemeContext'
 
 
 
