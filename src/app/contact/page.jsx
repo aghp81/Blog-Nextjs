@@ -3,6 +3,10 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import Cimage from 'public/Contact.png'
 
+export const metadata = {
+  title: ' تماس با ما | پروژه نکست جی اس',
+  description: 'صفحه تماس با ما',
+}
 
 export default function Contact() {
   return (
