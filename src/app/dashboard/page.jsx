@@ -5,6 +5,7 @@ import { useState } from 'react'
 import style from '../page.module.css'
 import styles from './page.module.css'
 import useSWR from 'swr'
+import { useSession, signIn, signOut } from "next-auth/react"
 
 
 
@@ -34,6 +35,10 @@ import useSWR from 'swr'
 //     getData()
 
 //   }, [])
+
+const session = useSession()
+
+console.log(session)
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
