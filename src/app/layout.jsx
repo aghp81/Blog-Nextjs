@@ -6,6 +6,10 @@ import { Inter, Roboto, Poppins, } from 'next/font/google'
 import { ThemeProvider } from '@/context/ThemeContext'
 
 
+import AuthProvider from "@/components/AuthProvider/AuthProvider"
+
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +28,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider>
 
+          <AuthProvider>
+
           <div className="container">
 
             <Navbar />
@@ -34,6 +40,8 @@ export default function RootLayout({
           
           </div>
           
+          </AuthProvider>
+
         </ThemeProvider>
         
         
